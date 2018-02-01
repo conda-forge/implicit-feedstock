@@ -7,33 +7,28 @@ package:
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 1
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
     - toolchain
     - cython >=0.24
     - gcc  # [unix]
-    - numpy 1.10.*  # [not (win and py36)]
-    - numpy 1.11.*  # [win and py36]
+    - numpy 1.11.*
     # implicit cimports BLAS from scipy
-    - scipy 0.16.*  # [not (win and py36)]
-    - scipy 0.18.*  # [win and py36]
+    - scipy 0.18.*
   run:
     - python
     - libgcc  # [unix]
-    - numpy >=1.10  # [not (win and py36)]
     - numpy >=1.11  # [win and py36]
-    - scipy >=0.16  # [not (win and py36)]
-    - scipy >=0.18  # [win and py36]
+    - scipy >=0.18
 
 test:
   imports:
