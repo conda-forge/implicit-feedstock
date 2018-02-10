@@ -1,6 +1,6 @@
 {% set name = "implicit" %}
-{% set version = "0.2.7" %}
-{% set sha256 = "b8c5fd270a3335988d8cff33f6e31b721d6d13813a02e6f61e21de1d62526267" %}
+{% set version = "0.3.0" %}
+{% set sha256 = "d3c561e200cd6384faa90a1d1ec8fd9a22f2f1172399b344a44becef9445565b" %}
 
 package:
   name: {{ name|lower }}
@@ -11,8 +11,9 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
+  skip: True  # [win and py27]
 
 requirements:
   build:
@@ -52,3 +53,4 @@ about:
 extra:
   recipe-maintainers:
     - rth
+    - benfred
