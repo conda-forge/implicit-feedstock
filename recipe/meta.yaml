@@ -1,6 +1,6 @@
 {% set name = "implicit" %}
-{% set version = "0.3.1" %}
-{% set sha256 = "045b3b043e56a494f3852e4fff9a411d4d5d32f7739b4087f0a19219f22a72a5" %}
+{% set version = "0.3.2" %}
+{% set sha256 = "a177b706570255b590ade1c88efa3111799505160ae8b00c1e9f58c6387f5003" %}
 
 package:
   name: {{ name|lower }}
