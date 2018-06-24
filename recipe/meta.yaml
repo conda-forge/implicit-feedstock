@@ -17,18 +17,18 @@ build:
 
 requirements:
   build:
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+  host:
     - python
     - pip
-    - toolchain
     - cython >=0.24
-    - gcc  # [unix]
-    - numpy 1.11.*
+    - numpy
     # implicit cimports BLAS from scipy
     - scipy 0.18.*
   run:
     - python
-    - libgcc  # [unix]
-    - numpy >=1.11  # [win and py36]
+    - {{ pin_compatible('numpy') }}   # [win and py36]
     - scipy >=0.18
     - tqdm
 
