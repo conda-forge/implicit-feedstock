@@ -23,7 +23,8 @@ requirements:
     - python
     - pip
     - cython >=0.24
-    - numpy
+    # required for scipy
+    - numpy 1.11.*
     # implicit cimports BLAS from scipy
     - scipy 0.18.*
   run:
