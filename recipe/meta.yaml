@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1000
   script: python -m pip install --no-deps --ignore-installed .
   skip: True  # [win and py27]
 
@@ -23,14 +23,13 @@ requirements:
     - python
     - pip
     - cython >=0.24
-    # required for scipy
-    - numpy 1.11.*
+    - numpy
     # implicit cimports BLAS from scipy
-    - scipy 0.18.*
+    - scipy
   run:
     - python
-    - {{ pin_compatible('numpy') }}   # [win and py36]
-    - scipy >=0.18
+    - {{ pin_compatible('numpy') }}
+    - {{ pin_compatible('scipy') }}
     - tqdm
 
 test:
