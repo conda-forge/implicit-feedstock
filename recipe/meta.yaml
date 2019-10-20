@@ -1,6 +1,6 @@
 {% set name = "implicit" %}
-{% set version = "0.4.0" %}
-{% set sha256 = "90bc576619e79051e129748d4661b3622d4d49bc63e05df9a15221f24a1f88ba" %}
+{% set version = "0.4.1" %}
+{% set sha256 = "5432102a8e2b55ebf56e7d5b615e1edde06e29cc09e9b8718d94b81f4e93c6f3" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
 
 build:
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   skip: True  # [win and py27]
 
 requirements:
