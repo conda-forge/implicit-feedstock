@@ -4,29 +4,58 @@
 
 jobs:
 - job: linux
-  pool:
-    vmImage: ubuntu-16.04
-  timeoutInMinutes: 360
+  pool: {vmImage: ubuntu-16.04}
   strategy:
-    maxParallel: 8
     matrix:
-      linux_numpy1.14python3.6.____cpython:
-        CONFIG: linux_numpy1.14python3.6.____cpython
-        UPLOAD_PACKAGES: True
-        DOCKER_IMAGE: condaforge/linux-anvil-comp7
-      linux_numpy1.14python3.7.____cpython:
-        CONFIG: linux_numpy1.14python3.7.____cpython
-        UPLOAD_PACKAGES: True
-        DOCKER_IMAGE: condaforge/linux-anvil-comp7
-      linux_numpy1.14python3.8.____cpython:
-        CONFIG: linux_numpy1.14python3.8.____cpython
-        UPLOAD_PACKAGES: True
-        DOCKER_IMAGE: condaforge/linux-anvil-comp7
-      linux_numpy1.18python3.6.____73_pypy:
-        CONFIG: linux_numpy1.18python3.6.____73_pypy
-        UPLOAD_PACKAGES: True
-        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_64_cuda_compiler_version10.0numpy1.16python3.6.____cpython: {CONFIG: linux_64_cuda_compiler_version10.0numpy1.16python3.6.____cpython,
+        UPLOAD_PACKAGES: 'True', DOCKER_IMAGE: 'condaforge/linux-anvil-cuda:10.0'}
+      linux_64_cuda_compiler_version10.0numpy1.16python3.7.____cpython: {CONFIG: linux_64_cuda_compiler_version10.0numpy1.16python3.7.____cpython,
+        UPLOAD_PACKAGES: 'True', DOCKER_IMAGE: 'condaforge/linux-anvil-cuda:10.0'}
+      linux_64_cuda_compiler_version10.0numpy1.16python3.8.____cpython: {CONFIG: linux_64_cuda_compiler_version10.0numpy1.16python3.8.____cpython,
+        UPLOAD_PACKAGES: 'True', DOCKER_IMAGE: 'condaforge/linux-anvil-cuda:10.0'}
+      linux_64_cuda_compiler_version10.0numpy1.18python3.6.____73_pypy: {CONFIG: linux_64_cuda_compiler_version10.0numpy1.18python3.6.____73_pypy,
+        UPLOAD_PACKAGES: 'True', DOCKER_IMAGE: 'condaforge/linux-anvil-cuda:10.0'}
+      linux_64_cuda_compiler_version10.1numpy1.16python3.6.____cpython: {CONFIG: linux_64_cuda_compiler_version10.1numpy1.16python3.6.____cpython,
+        UPLOAD_PACKAGES: 'True', DOCKER_IMAGE: 'condaforge/linux-anvil-cuda:10.1'}
+      linux_64_cuda_compiler_version10.1numpy1.16python3.7.____cpython: {CONFIG: linux_64_cuda_compiler_version10.1numpy1.16python3.7.____cpython,
+        UPLOAD_PACKAGES: 'True', DOCKER_IMAGE: 'condaforge/linux-anvil-cuda:10.1'}
+      linux_64_cuda_compiler_version10.1numpy1.16python3.8.____cpython: {CONFIG: linux_64_cuda_compiler_version10.1numpy1.16python3.8.____cpython,
+        UPLOAD_PACKAGES: 'True', DOCKER_IMAGE: 'condaforge/linux-anvil-cuda:10.1'}
+      linux_64_cuda_compiler_version10.1numpy1.18python3.6.____73_pypy: {CONFIG: linux_64_cuda_compiler_version10.1numpy1.18python3.6.____73_pypy,
+        UPLOAD_PACKAGES: 'True', DOCKER_IMAGE: 'condaforge/linux-anvil-cuda:10.1'}
+      linux_64_cuda_compiler_version10.2numpy1.16python3.6.____cpython: {CONFIG: linux_64_cuda_compiler_version10.2numpy1.16python3.6.____cpython,
+        UPLOAD_PACKAGES: 'True', DOCKER_IMAGE: 'condaforge/linux-anvil-cuda:10.2'}
+      linux_64_cuda_compiler_version10.2numpy1.16python3.7.____cpython: {CONFIG: linux_64_cuda_compiler_version10.2numpy1.16python3.7.____cpython,
+        UPLOAD_PACKAGES: 'True', DOCKER_IMAGE: 'condaforge/linux-anvil-cuda:10.2'}
+      linux_64_cuda_compiler_version10.2numpy1.16python3.8.____cpython: {CONFIG: linux_64_cuda_compiler_version10.2numpy1.16python3.8.____cpython,
+        UPLOAD_PACKAGES: 'True', DOCKER_IMAGE: 'condaforge/linux-anvil-cuda:10.2'}
+      linux_64_cuda_compiler_version10.2numpy1.18python3.6.____73_pypy: {CONFIG: linux_64_cuda_compiler_version10.2numpy1.18python3.6.____73_pypy,
+        UPLOAD_PACKAGES: 'True', DOCKER_IMAGE: 'condaforge/linux-anvil-cuda:10.2'}
+      linux_64_cuda_compiler_version9.2numpy1.16python3.6.____cpython: {CONFIG: linux_64_cuda_compiler_version9.2numpy1.16python3.6.____cpython,
+        UPLOAD_PACKAGES: 'True', DOCKER_IMAGE: 'condaforge/linux-anvil-cuda:9.2'}
+      linux_64_cuda_compiler_version9.2numpy1.16python3.7.____cpython: {CONFIG: linux_64_cuda_compiler_version9.2numpy1.16python3.7.____cpython,
+        UPLOAD_PACKAGES: 'True', DOCKER_IMAGE: 'condaforge/linux-anvil-cuda:9.2'}
+      linux_64_cuda_compiler_version9.2numpy1.16python3.8.____cpython: {CONFIG: linux_64_cuda_compiler_version9.2numpy1.16python3.8.____cpython,
+        UPLOAD_PACKAGES: 'True', DOCKER_IMAGE: 'condaforge/linux-anvil-cuda:9.2'}
+      linux_64_cuda_compiler_version9.2numpy1.18python3.6.____73_pypy: {CONFIG: linux_64_cuda_compiler_version9.2numpy1.18python3.6.____73_pypy,
+        UPLOAD_PACKAGES: 'True', DOCKER_IMAGE: 'condaforge/linux-anvil-cuda:9.2'}
+      linux_64_cuda_compiler_versionNonenumpy1.16python3.6.____cpython: {CONFIG: linux_64_cuda_compiler_versionNonenumpy1.16python3.6.____cpython,
+        UPLOAD_PACKAGES: 'True', DOCKER_IMAGE: condaforge/linux-anvil-comp7}
+      linux_64_cuda_compiler_versionNonenumpy1.16python3.7.____cpython: {CONFIG: linux_64_cuda_compiler_versionNonenumpy1.16python3.7.____cpython,
+        UPLOAD_PACKAGES: 'True', DOCKER_IMAGE: condaforge/linux-anvil-comp7}
+      linux_64_cuda_compiler_versionNonenumpy1.16python3.8.____cpython: {CONFIG: linux_64_cuda_compiler_versionNonenumpy1.16python3.8.____cpython,
+        UPLOAD_PACKAGES: 'True', DOCKER_IMAGE: condaforge/linux-anvil-comp7}
+      linux_64_cuda_compiler_versionNonenumpy1.18python3.6.____73_pypy: {CONFIG: linux_64_cuda_compiler_versionNonenumpy1.18python3.6.____73_pypy,
+        UPLOAD_PACKAGES: 'True', DOCKER_IMAGE: condaforge/linux-anvil-comp7}
+    maxParallel: 8
+  timeoutInMinutes: 360
+
   steps:
+  - script: |
+         rm -rf /opt/ghc
+         df -h
+    displayName: Manage disk space
+
   # configure qemu binfmt-misc running.  This allows us to run docker containers
   # embedded qemu-static
   - script: |
@@ -38,7 +67,10 @@ jobs:
   - script: |
         export CI=azure
         export GIT_BRANCH=$BUILD_SOURCEBRANCHNAME
+        export FEEDSTOCK_NAME=$(basename ${BUILD_REPOSITORY_NAME})
         .scripts/run_docker_build.sh
     displayName: Run docker build
     env:
       BINSTAR_TOKEN: $(BINSTAR_TOKEN)
+      FEEDSTOCK_TOKEN: $(FEEDSTOCK_TOKEN)
+      STAGING_BINSTAR_TOKEN: $(STAGING_BINSTAR_TOKEN)
