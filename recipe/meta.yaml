@@ -1,6 +1,6 @@
 {% set name = "implicit" %}
-{% set version = "0.4.2" %}
-{% set sha256 = "fb66ab4db428e02caae87b312d409b53d7c40c9e8258e642f228cc3cc550ed99" %}
+{% set version = "0.4.3" %}
+{% set sha256 = "0fbcfd74c38f6fda81d816cb0e3212c97611961696afcc8d1d23babad0f18ac1" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
-  skip: True  # [win and py27]
+  skip: true  # [win and py27]
 
 requirements:
   build:
@@ -42,13 +42,13 @@ about:
   home: http://github.com/benfred/implicit/
   license: MIT
   license_family: MIT
-  license_file: 'LICENSE'
-  summary: 'Fast Python Collaborative Filtering for Implicit Datasets.'
+  license_file: LICENSE
+  summary: Fast Python Collaborative Filtering for Implicit Datasets.
   description: |
-      This project provides fast Python implementations of the algorithms
-      described in the paper Collaborative Filtering for Implicit Feedback
-      Datasets and in Applications of the Conjugate Gradient Method
-      for Implicit Feedback Collaborative Filtering
+    This project provides fast Python implementations of the algorithms
+    described in the paper Collaborative Filtering for Implicit Feedback
+    Datasets and in Applications of the Conjugate Gradient Method
+    for Implicit Feedback Collaborative Filtering
   doc_url: http://implicit.readthedocs.io/
   dev_url: http://github.com/benfred/implicit/
 
