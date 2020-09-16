@@ -2,6 +2,10 @@
 {% set version = "0.4.4" %}
 {% set sha256 = "4ec4966a6e34c676695528bfee3465c48cf7e0ba49594ad96ffb7608c795c2f6" %}
 
+{% set implicit_proc_type = "cpu" if cuda_compiler_version == "None" else "gpu" %}  # [linux64]
+{% set implicit_proc_type = "cpu" %}                                                # [not linux64]
+
+
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -12,31 +16,65 @@ source:
 
 build:
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
   skip: true  # [win and py27]
 
-requirements:
-  build:
-    - {{ compiler('c') }}
-    - {{ compiler('cxx') }}
-    - {{ compiler('cuda') }}  # [linux64 and cuda_compiler_version != "None"]
-  host:
-    - python
-    - pip
-    - cython >=0.24
-    - numpy
-    # implicit cimports BLAS from scipy
-    - scipy >=0.16
-  run:
-    - python
-    - {{ pin_compatible('numpy') }}
-    - {{ pin_compatible('scipy') }}
-    - tqdm >=4.27
+outputs:
+  - name: implicit-proc
+    version: {{ version }}
+    build:
+      number: 0
+      string: "{{ implicit_proc_type }}"
+    test:
+      commands:
+        - exit 0
+    about:
+      home: https://github.com/conda-forge/implicit-feedstock
+      license: BSD-3-Clause
+      license_family: BSD
+      summary: A meta-package to select CPU or GPU implicit build.
 
-test:
-  imports:
-    - implicit
-    - implicit._als
+  - name: implicit
+    build:
+      number: 1
+      script: python -m pip install . --no-deps -vv
+
+    requirements:
+      build:
+        - {{ compiler('c') }}
+        - {{ compiler('cxx') }}
+        - {{ compiler('cuda') }}  # [linux64 and cuda_compiler_version != "None"]
+      host:
+        - python
+        - pip
+        - cython >=0.24
+        # implicit cimports BLAS from scipy
+        - scipy >=0.16
+      run:
+        - python
+        - {{ pin_compatible('numpy') }}
+        - {{ pin_compatible('scipy') }}
+        - tqdm >=4.27
+      run_constrained:
+        - implicit-proc * {{ implicit_proc_type }}
+
+    test:
+      imports:
+        - implicit
+        - implicit._als
+
+    about:
+      home: http://github.com/benfred/implicit/
+      license: MIT
+      license_family: MIT
+      license_file: LICENSE
+      summary: Fast Python Collaborative Filtering for Implicit Datasets.
+      description: |
+        This project provides fast Python implementations of the algorithms
+        described in the paper Collaborative Filtering for Implicit Feedback
+        Datasets and in Applications of the Conjugate Gradient Method
+        for Implicit Feedback Collaborative Filtering
+      doc_url: http://implicit.readthedocs.io/
+      dev_url: http://github.com/benfred/implicit/
 
 about:
   home: http://github.com/benfred/implicit/
