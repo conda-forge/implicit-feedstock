@@ -1,6 +1,6 @@
 {% set name = "implicit" %}
-{% set version = "0.4.6" %}
-{% set sha256 = "6b61d4287721983159ca3cc56aec2f022b07a32892ed037d4e395f8728af6d5c" %}
+{% set version = "0.4.7" %}
+{% set sha256 = "e257943924639b9b8475abbecefe07343a0d8c1ea3131d6eb4b3f91f8f2a66e8" %}
 
 {% set implicit_proc_type = "cpu" if cuda_compiler_version == "None" else "gpu" %}  # [linux64]
 {% set implicit_proc_type = "cpu" %}                                                # [not linux64]
