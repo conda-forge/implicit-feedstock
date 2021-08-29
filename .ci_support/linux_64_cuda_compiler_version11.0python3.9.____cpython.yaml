@@ -24,6 +24,8 @@ pin_run_as_build:
     max_pin: x.x
 python:
 - 3.9.* *_cpython
+python_impl:
+- cpython
 target_platform:
 - linux-64
 zip_keys:
@@ -32,3 +34,5 @@ zip_keys:
 - - cdt_name
   - cuda_compiler_version
   - docker_image
+- - python
+  - python_impl
