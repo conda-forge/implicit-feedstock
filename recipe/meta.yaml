@@ -15,7 +15,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 4
+  number: 5
   skip: true  # [win and py27]
   skip: true  # [cuda_compiler_version == "10.2"]
   skip: true  # [python_impl == "pypy"]
@@ -24,7 +24,7 @@ outputs:
   - name: implicit-proc
     version: {{ version }}
     build:
-      number: 4
+      number: 5
       string: "{{ implicit_proc_type }}"
     test:
       commands:
@@ -37,7 +37,7 @@ outputs:
 
   - name: implicit
     build:
-      number: 5
+      number: 6
       script: python -m pip install . --no-deps -vv
 
     requirements:
