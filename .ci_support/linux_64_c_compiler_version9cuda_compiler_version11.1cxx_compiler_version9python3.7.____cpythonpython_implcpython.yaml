@@ -1,11 +1,11 @@
 c_compiler:
 - gcc
 c_compiler_version:
-- '7'
+- '9'
 cdt_name:
 - cos7
 channel_sources:
-- conda-forge,defaults
+- conda-forge
 channel_targets:
 - conda-forge main
 cuda_compiler:
@@ -15,7 +15,7 @@ cuda_compiler_version:
 cxx_compiler:
 - gxx
 cxx_compiler_version:
-- '7'
+- '9'
 docker_image:
 - quay.io/condaforge/linux-anvil-cuda:11.1
 pin_run_as_build:
@@ -23,7 +23,7 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.6.* *_cpython
+- 3.7.* *_cpython
 python_impl:
 - cpython
 target_platform:
@@ -31,8 +31,8 @@ target_platform:
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
-- - cdt_name
   - cuda_compiler_version
+  - cdt_name
   - docker_image
 - - python
   - python_impl
