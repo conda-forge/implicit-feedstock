@@ -1,6 +1,7 @@
+{% set implicit_proc_type = "cpu" %}
 {% set name = "implicit" %}
-{% set version = "0.4.8" %}
-{% set sha256 = "965251ae90db6f6e2d316a9ff883e091e5fca786a4ad2d12d0e060710df86aa7" %}
+{% set version = "0.5.1" %}
+{% set sha256 = "267c595b34b4825294a621d99ef534e26fd38bcac78d494810a13c38226a8b10" %}
 
 {% set implicit_proc_type = "cpu" if cuda_compiler_version == "None" else "gpu" %}  # [linux64]
 {% set implicit_proc_type = "cpu" %}                                                # [not linux64]
@@ -15,7 +16,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 4
+  number: 0
   skip: true  # [win and py27]
   skip: true  # [cuda_compiler_version == "10.2"]
   skip: true  # [python_impl == "pypy"]
@@ -24,8 +25,8 @@ outputs:
   - name: implicit-proc
     version: {{ version }}
     build:
-      number: 4
-      string: "{{ implicit_proc_type }}"
+      number: 0
+      string: {{ implicit_proc_type }}
     test:
       commands:
         - exit 0
@@ -37,7 +38,7 @@ outputs:
 
   - name: implicit
     build:
-      number: 5
+      number: 0
       script: python -m pip install . --no-deps -vv
 
     requirements:
