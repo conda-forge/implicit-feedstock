@@ -46,7 +46,7 @@ outputs:
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
         - {{ compiler('cuda') }}  # [linux64 and cuda_compiler_version != "None"]
-        - make # [linux64]
+        - make  # [linux64]
       host:
         - python
         - pip
