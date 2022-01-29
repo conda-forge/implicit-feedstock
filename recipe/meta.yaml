@@ -1,7 +1,7 @@
 {% set implicit_proc_type = "cpu" %}
 {% set name = "implicit" %}
-{% set version = "0.5.1" %}
-{% set sha256 = "267c595b34b4825294a621d99ef534e26fd38bcac78d494810a13c38226a8b10" %}
+{% set version = "0.5.2" %}
+{% set sha256 = "bf4674a898251d89dd54d8a11a82f488edcc2ff2a9923a37dd0b271453e417d9" %}
 
 {% set implicit_proc_type = "cpu" if cuda_compiler_version == "None" else "gpu" %}  # [linux64]
 {% set implicit_proc_type = "cpu" %}                                                # [not linux64]
@@ -46,6 +46,7 @@ outputs:
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
         - {{ compiler('cuda') }}  # [linux64 and cuda_compiler_version != "None"]
+        - make # [linux64]
       host:
         - python
         - pip
@@ -63,7 +64,7 @@ outputs:
     test:
       imports:
         - implicit
-        - implicit._als
+        - implicit.cpu._als
 
     about:
       home: http://github.com/benfred/implicit/
