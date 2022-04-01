@@ -3,7 +3,7 @@ MACOSX_DEPLOYMENT_TARGET:
 c_compiler:
 - clang
 c_compiler_version:
-- '11'
+- '12'
 channel_sources:
 - conda-forge
 channel_targets:
@@ -13,7 +13,11 @@ cuda_compiler_version:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '11'
+- '12'
+fortran_compiler:
+- gfortran
+fortran_compiler_version:
+- '9'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 pin_run_as_build:
@@ -29,5 +33,6 @@ target_platform:
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
+  - fortran_compiler_version
 - - python
   - python_impl

@@ -1,9 +1,9 @@
 c_compiler:
 - gcc
 c_compiler_version:
-- '9'
+- '10'
 cdt_name:
-- cos6
+- cos7
 channel_sources:
 - conda-forge
 channel_targets:
@@ -11,13 +11,17 @@ channel_targets:
 cuda_compiler:
 - nvcc
 cuda_compiler_version:
-- None
+- '11.1'
 cxx_compiler:
 - gxx
 cxx_compiler_version:
-- '9'
+- '10'
 docker_image:
-- quay.io/condaforge/linux-anvil-cos7-x86_64
+- quay.io/condaforge/linux-anvil-cuda:11.1
+fortran_compiler:
+- gfortran
+fortran_compiler_version:
+- '10'
 pin_run_as_build:
   python:
     min_pin: x.x
@@ -31,6 +35,7 @@ target_platform:
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
+  - fortran_compiler_version
   - cuda_compiler_version
   - cdt_name
   - docker_image
