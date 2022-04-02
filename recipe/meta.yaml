@@ -8,7 +8,7 @@
 
 
 package:
-  name: {{ name|lower }}
+  name: {{ name|lower }}-split
   version: {{ version }}
 
 source:
@@ -54,6 +54,7 @@ outputs:
         - cython >=0.24
         # implicit cimports BLAS from scipy
         - scipy >=0.16
+        - numpy
       run:
         - python
         - {{ pin_compatible('numpy') }}
@@ -99,3 +100,4 @@ extra:
   recipe-maintainers:
     - rth
     - benfred
+  feedstock-name: implicit
