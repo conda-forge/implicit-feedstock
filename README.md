@@ -37,255 +37,255 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_c_compiler_version10cuda_compiler_version11.1cxx_compiler_version10fortran_compiler_version10python3.10.____cpythonpython_implcpython</td>
+              <td>linux_64_c_compiler_version10cuda_compiler_version11.1cxx_compiler_version10fortran_compiler_version10numpy1.19python3.7.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=444&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version10cuda_compiler_version11.1cxx_compiler_version10fortran_compiler_version10python3.10.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version10cuda_compiler_version11.1cxx_compiler_version10fortran_compiler_version10numpy1.19python3.7.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version10cuda_compiler_version11.1cxx_compiler_version10fortran_compiler_version10python3.7.____cpythonpython_implcpython</td>
+              <td>linux_64_c_compiler_version10cuda_compiler_version11.1cxx_compiler_version10fortran_compiler_version10numpy1.19python3.8.____cpythonpython_implpypy</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=444&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version10cuda_compiler_version11.1cxx_compiler_version10fortran_compiler_version10python3.7.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version10cuda_compiler_version11.1cxx_compiler_version10fortran_compiler_version10numpy1.19python3.8.____cpythonpython_implpypy" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version10cuda_compiler_version11.1cxx_compiler_version10fortran_compiler_version10python3.8.____cpythonpython_implcpython</td>
+              <td>linux_64_c_compiler_version10cuda_compiler_version11.1cxx_compiler_version10fortran_compiler_version10numpy1.19python3.9.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=444&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version10cuda_compiler_version11.1cxx_compiler_version10fortran_compiler_version10python3.8.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version10cuda_compiler_version11.1cxx_compiler_version10fortran_compiler_version10numpy1.19python3.9.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version10cuda_compiler_version11.1cxx_compiler_version10fortran_compiler_version10python3.9.____cpythonpython_implcpython</td>
+              <td>linux_64_c_compiler_version10cuda_compiler_version11.1cxx_compiler_version10fortran_compiler_version10numpy1.21python3.10.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=444&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version10cuda_compiler_version11.1cxx_compiler_version10fortran_compiler_version10python3.9.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version10cuda_compiler_version11.1cxx_compiler_version10fortran_compiler_version10numpy1.21python3.10.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version10cuda_compiler_version11.2cxx_compiler_version10fortran_compiler_version10python3.10.____cpythonpython_implcpython</td>
+              <td>linux_64_c_compiler_version10cuda_compiler_version11.2cxx_compiler_version10fortran_compiler_version10numpy1.19python3.7.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=444&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version10cuda_compiler_version11.2cxx_compiler_version10fortran_compiler_version10python3.10.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version10cuda_compiler_version11.2cxx_compiler_version10fortran_compiler_version10numpy1.19python3.7.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version10cuda_compiler_version11.2cxx_compiler_version10fortran_compiler_version10python3.7.____cpythonpython_implcpython</td>
+              <td>linux_64_c_compiler_version10cuda_compiler_version11.2cxx_compiler_version10fortran_compiler_version10numpy1.19python3.8.____cpythonpython_implpypy</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=444&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version10cuda_compiler_version11.2cxx_compiler_version10fortran_compiler_version10python3.7.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version10cuda_compiler_version11.2cxx_compiler_version10fortran_compiler_version10numpy1.19python3.8.____cpythonpython_implpypy" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version10cuda_compiler_version11.2cxx_compiler_version10fortran_compiler_version10python3.8.____cpythonpython_implcpython</td>
+              <td>linux_64_c_compiler_version10cuda_compiler_version11.2cxx_compiler_version10fortran_compiler_version10numpy1.19python3.9.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=444&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version10cuda_compiler_version11.2cxx_compiler_version10fortran_compiler_version10python3.8.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version10cuda_compiler_version11.2cxx_compiler_version10fortran_compiler_version10numpy1.19python3.9.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version10cuda_compiler_version11.2cxx_compiler_version10fortran_compiler_version10python3.9.____cpythonpython_implcpython</td>
+              <td>linux_64_c_compiler_version10cuda_compiler_version11.2cxx_compiler_version10fortran_compiler_version10numpy1.21python3.10.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=444&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version10cuda_compiler_version11.2cxx_compiler_version10fortran_compiler_version10python3.9.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version10cuda_compiler_version11.2cxx_compiler_version10fortran_compiler_version10numpy1.21python3.10.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version10cuda_compiler_versionNonecxx_compiler_version10fortran_compiler_version10python3.10.____cpythonpython_implcpython</td>
+              <td>linux_64_c_compiler_version10cuda_compiler_versionNonecxx_compiler_version10fortran_compiler_version10numpy1.19python3.7.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=444&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version10cuda_compiler_versionNonecxx_compiler_version10fortran_compiler_version10python3.10.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version10cuda_compiler_versionNonecxx_compiler_version10fortran_compiler_version10numpy1.19python3.7.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version10cuda_compiler_versionNonecxx_compiler_version10fortran_compiler_version10python3.7.____cpythonpython_implcpython</td>
+              <td>linux_64_c_compiler_version10cuda_compiler_versionNonecxx_compiler_version10fortran_compiler_version10numpy1.19python3.8.____cpythonpython_implpypy</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=444&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version10cuda_compiler_versionNonecxx_compiler_version10fortran_compiler_version10python3.7.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version10cuda_compiler_versionNonecxx_compiler_version10fortran_compiler_version10numpy1.19python3.8.____cpythonpython_implpypy" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version10cuda_compiler_versionNonecxx_compiler_version10fortran_compiler_version10python3.8.____cpythonpython_implcpython</td>
+              <td>linux_64_c_compiler_version10cuda_compiler_versionNonecxx_compiler_version10fortran_compiler_version10numpy1.19python3.9.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=444&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version10cuda_compiler_versionNonecxx_compiler_version10fortran_compiler_version10python3.8.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version10cuda_compiler_versionNonecxx_compiler_version10fortran_compiler_version10numpy1.19python3.9.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version10cuda_compiler_versionNonecxx_compiler_version10fortran_compiler_version10python3.9.____cpythonpython_implcpython</td>
+              <td>linux_64_c_compiler_version10cuda_compiler_versionNonecxx_compiler_version10fortran_compiler_version10numpy1.21python3.10.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=444&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version10cuda_compiler_versionNonecxx_compiler_version10fortran_compiler_version10python3.9.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version10cuda_compiler_versionNonecxx_compiler_version10fortran_compiler_version10numpy1.21python3.10.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version9cuda_compiler_version11.0cxx_compiler_version9fortran_compiler_version9python3.10.____cpythonpython_implcpython</td>
+              <td>linux_64_c_compiler_version9cuda_compiler_version11.0cxx_compiler_version9fortran_compiler_version9numpy1.19python3.7.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=444&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version9cuda_compiler_version11.0cxx_compiler_version9fortran_compiler_version9python3.10.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version9cuda_compiler_version11.0cxx_compiler_version9fortran_compiler_version9numpy1.19python3.7.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version9cuda_compiler_version11.0cxx_compiler_version9fortran_compiler_version9python3.7.____cpythonpython_implcpython</td>
+              <td>linux_64_c_compiler_version9cuda_compiler_version11.0cxx_compiler_version9fortran_compiler_version9numpy1.19python3.8.____cpythonpython_implpypy</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=444&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version9cuda_compiler_version11.0cxx_compiler_version9fortran_compiler_version9python3.7.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version9cuda_compiler_version11.0cxx_compiler_version9fortran_compiler_version9numpy1.19python3.8.____cpythonpython_implpypy" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version9cuda_compiler_version11.0cxx_compiler_version9fortran_compiler_version9python3.8.____cpythonpython_implcpython</td>
+              <td>linux_64_c_compiler_version9cuda_compiler_version11.0cxx_compiler_version9fortran_compiler_version9numpy1.19python3.9.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=444&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version9cuda_compiler_version11.0cxx_compiler_version9fortran_compiler_version9python3.8.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version9cuda_compiler_version11.0cxx_compiler_version9fortran_compiler_version9numpy1.19python3.9.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_compiler_version9cuda_compiler_version11.0cxx_compiler_version9fortran_compiler_version9python3.9.____cpythonpython_implcpython</td>
+              <td>linux_64_c_compiler_version9cuda_compiler_version11.0cxx_compiler_version9fortran_compiler_version9numpy1.21python3.10.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=444&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version9cuda_compiler_version11.0cxx_compiler_version9fortran_compiler_version9python3.9.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version9cuda_compiler_version11.0cxx_compiler_version9fortran_compiler_version9numpy1.21python3.10.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_python3.10.____cpythonpython_implcpython</td>
+              <td>osx_64_numpy1.19python3.7.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=444&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=osx&configuration=osx_64_python3.10.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=osx&configuration=osx_64_numpy1.19python3.7.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_python3.7.____cpythonpython_implcpython</td>
+              <td>osx_64_numpy1.19python3.8.____cpythonpython_implpypy</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=444&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=osx&configuration=osx_64_python3.7.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=osx&configuration=osx_64_numpy1.19python3.8.____cpythonpython_implpypy" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_python3.8.____cpythonpython_implcpython</td>
+              <td>osx_64_numpy1.19python3.9.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=444&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=osx&configuration=osx_64_python3.8.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=osx&configuration=osx_64_numpy1.19python3.9.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_python3.9.____cpythonpython_implcpython</td>
+              <td>osx_64_numpy1.21python3.10.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=444&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=osx&configuration=osx_64_python3.9.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=osx&configuration=osx_64_numpy1.21python3.10.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version11.0python3.10.____cpythonpython_implcpython</td>
+              <td>win_64_cuda_compiler_version11.0numpy1.19python3.7.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=444&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=win&configuration=win_64_cuda_compiler_version11.0python3.10.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=win&configuration=win_64_cuda_compiler_version11.0numpy1.19python3.7.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version11.0python3.7.____cpythonpython_implcpython</td>
+              <td>win_64_cuda_compiler_version11.0numpy1.19python3.8.____cpythonpython_implpypy</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=444&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=win&configuration=win_64_cuda_compiler_version11.0python3.7.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=win&configuration=win_64_cuda_compiler_version11.0numpy1.19python3.8.____cpythonpython_implpypy" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version11.0python3.8.____cpythonpython_implcpython</td>
+              <td>win_64_cuda_compiler_version11.0numpy1.19python3.9.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=444&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=win&configuration=win_64_cuda_compiler_version11.0python3.8.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=win&configuration=win_64_cuda_compiler_version11.0numpy1.19python3.9.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version11.0python3.9.____cpythonpython_implcpython</td>
+              <td>win_64_cuda_compiler_version11.0numpy1.21python3.10.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=444&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=win&configuration=win_64_cuda_compiler_version11.0python3.9.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=win&configuration=win_64_cuda_compiler_version11.0numpy1.21python3.10.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version11.1python3.10.____cpythonpython_implcpython</td>
+              <td>win_64_cuda_compiler_version11.1numpy1.19python3.7.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=444&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=win&configuration=win_64_cuda_compiler_version11.1python3.10.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=win&configuration=win_64_cuda_compiler_version11.1numpy1.19python3.7.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version11.1python3.7.____cpythonpython_implcpython</td>
+              <td>win_64_cuda_compiler_version11.1numpy1.19python3.8.____cpythonpython_implpypy</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=444&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=win&configuration=win_64_cuda_compiler_version11.1python3.7.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=win&configuration=win_64_cuda_compiler_version11.1numpy1.19python3.8.____cpythonpython_implpypy" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version11.1python3.8.____cpythonpython_implcpython</td>
+              <td>win_64_cuda_compiler_version11.1numpy1.19python3.9.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=444&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=win&configuration=win_64_cuda_compiler_version11.1python3.8.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=win&configuration=win_64_cuda_compiler_version11.1numpy1.19python3.9.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version11.1python3.9.____cpythonpython_implcpython</td>
+              <td>win_64_cuda_compiler_version11.1numpy1.21python3.10.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=444&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=win&configuration=win_64_cuda_compiler_version11.1python3.9.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=win&configuration=win_64_cuda_compiler_version11.1numpy1.21python3.10.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version11.2python3.10.____cpythonpython_implcpython</td>
+              <td>win_64_cuda_compiler_version11.2numpy1.19python3.7.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=444&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=win&configuration=win_64_cuda_compiler_version11.2python3.10.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=win&configuration=win_64_cuda_compiler_version11.2numpy1.19python3.7.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version11.2python3.7.____cpythonpython_implcpython</td>
+              <td>win_64_cuda_compiler_version11.2numpy1.19python3.8.____cpythonpython_implpypy</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=444&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=win&configuration=win_64_cuda_compiler_version11.2python3.7.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=win&configuration=win_64_cuda_compiler_version11.2numpy1.19python3.8.____cpythonpython_implpypy" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version11.2python3.8.____cpythonpython_implcpython</td>
+              <td>win_64_cuda_compiler_version11.2numpy1.19python3.9.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=444&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=win&configuration=win_64_cuda_compiler_version11.2python3.8.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=win&configuration=win_64_cuda_compiler_version11.2numpy1.19python3.9.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_version11.2python3.9.____cpythonpython_implcpython</td>
+              <td>win_64_cuda_compiler_version11.2numpy1.21python3.10.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=444&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=win&configuration=win_64_cuda_compiler_version11.2python3.9.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=win&configuration=win_64_cuda_compiler_version11.2numpy1.21python3.10.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_versionNonepython3.10.____cpythonpython_implcpython</td>
+              <td>win_64_cuda_compiler_versionNonenumpy1.19python3.7.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=444&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=win&configuration=win_64_cuda_compiler_versionNonepython3.10.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=win&configuration=win_64_cuda_compiler_versionNonenumpy1.19python3.7.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_versionNonepython3.7.____cpythonpython_implcpython</td>
+              <td>win_64_cuda_compiler_versionNonenumpy1.19python3.8.____cpythonpython_implpypy</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=444&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=win&configuration=win_64_cuda_compiler_versionNonepython3.7.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=win&configuration=win_64_cuda_compiler_versionNonenumpy1.19python3.8.____cpythonpython_implpypy" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_versionNonepython3.8.____cpythonpython_implcpython</td>
+              <td>win_64_cuda_compiler_versionNonenumpy1.19python3.9.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=444&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=win&configuration=win_64_cuda_compiler_versionNonepython3.8.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=win&configuration=win_64_cuda_compiler_versionNonenumpy1.19python3.9.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_cuda_compiler_versionNonepython3.9.____cpythonpython_implcpython</td>
+              <td>win_64_cuda_compiler_versionNonenumpy1.21python3.10.____cpythonpython_implcpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=444&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=win&configuration=win_64_cuda_compiler_versionNonepython3.9.____cpythonpython_implcpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/implicit-feedstock?branchName=master&jobName=win&configuration=win_64_cuda_compiler_versionNonenumpy1.21python3.10.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr>
