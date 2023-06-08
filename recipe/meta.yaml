@@ -16,7 +16,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win and py27]
   skip: true  # [cuda_compiler_version == "10.2"]
   skip: true  # [python_impl == "pypy"]
