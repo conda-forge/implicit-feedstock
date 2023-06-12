@@ -14,10 +14,13 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
+  patches:
+    - patches/0001-thrust.patch
 
 build:
   number: 0
   skip: true  # [py2k]
+  skip: true  # [win and cuda_compiler_version != "None"]
 
 outputs:
   - name: implicit-proc
@@ -37,21 +40,25 @@ outputs:
   - name: implicit
     build:
       number: 0
+      script:
+        - python -m pip install . --no-deps -vv
 
     requirements:
       build:
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
         - {{ compiler('cuda') }}  # [linux64 and cuda_compiler_version != "None"]
-        - ninja
-        - cmake
       host:
         - python x.x
+        - pip
+        - wheel
+        - setuptools
+        - ninja
+        - cmake
         - scikit-build >=0.13.1
         - cython >=0.24
         # implicit cimports BLAS from scipy
         - scipy >=0.16
-        - setuptools
       run:
         - python x.x
         - {{ pin_compatible('numpy') }}
