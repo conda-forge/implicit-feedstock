@@ -17,8 +17,8 @@ source:
 
 build:
   number: 0
-  skip: true  # [win and py27]
-  skip: true  # [cuda_compiler_version == "10.2"]
+  skip: true  # [py2k]
+  skip: true  # [win and cuda_compiler_version != "None"]
   skip: true  # [python_impl == "pypy"]
 
 outputs:
@@ -50,6 +50,10 @@ outputs:
       host:
         - python
         - pip
+        - wheel
+        - setuptools
+        - ninja
+        - cmake
         - cython >=0.24
         # implicit cimports BLAS from scipy
         - scipy >=0.16
