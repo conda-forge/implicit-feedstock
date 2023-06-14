@@ -11,3 +11,13 @@ index 85a2c55..b0109da 100644
          ${CMAKE_BINARY_DIR}/RAPIDS.cmake)
      include(${CMAKE_BINARY_DIR}/RAPIDS.cmake)
      include(rapids-cmake)
+diff --git a/setup.py b/setup.py
+index c6c6de2..fef5769 100644
+--- a/setup.py
++++ b/setup.py
+@@ -58,4 +58,5 @@ setup(
+     install_requires=["numpy", "scipy>=0.16", "tqdm>=4.27"],
+     setup_requires=setup_requires,
+     cmake_process_manifest_hook=exclude_non_implicit_cmake_files,
++    cmake_args=["--trace-expand", "--debug-find-pkg=Thrust"],
+ )
