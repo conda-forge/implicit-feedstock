@@ -22,6 +22,9 @@ build:
   skip: true  # [py2k]
   skip: true  # [win and cuda_compiler_version != "None"]
   skip: true  # [python_impl == "pypy"]
+  skip: true  # [cuda_compiler_version == "10.2"]
+  skip: true  # [cuda_compiler_version == "11.0"]
+  skip: true  # [cuda_compiler_version == "11.1"]
 
 outputs:
   - name: implicit-proc
