@@ -1,5 +1,5 @@
 diff --git a/implicit/gpu/CMakeLists.txt b/implicit/gpu/CMakeLists.txt
-index 85a2c55..b0109da 100644
+index 85a2c55..70f5ffc 100644
 --- a/implicit/gpu/CMakeLists.txt
 +++ b/implicit/gpu/CMakeLists.txt
 @@ -14,7 +14,7 @@ else()
@@ -11,6 +11,36 @@ index 85a2c55..b0109da 100644
          ${CMAKE_BINARY_DIR}/RAPIDS.cmake)
      include(${CMAKE_BINARY_DIR}/RAPIDS.cmake)
      include(rapids-cmake)
+@@ -22,9 +22,29 @@ else()
+     include(rapids-cuda)
+     include(rapids-export)
+     include(rapids-find)
++    include(${rapids-cmake-dir}/cpm/package_override.cmake)
++
+     rapids_cpm_init()
+     rapids_cmake_build_type(Release)
+ 
++    file(WRITE ${CMAKE_CURRENT_BINARY_DIR}/override.json
++      [=[
++        {
++          "packages" : {
++            "Thrust" : {
++              "version" : "1.17.2",
++              "git_url" : "https://github.com/benfred/thrust.git",
++              "git_tag" : "no_cmake_find_root_path",
++              "git_shallow" : true,
++              "always_download" : true,
++              "exclude_from_all" : false
++
++            }
++          }
++        }
++    ]=])
++    rapids_cpm_package_override(${CMAKE_CURRENT_BINARY_DIR}/override.json)
++
+     # get rmm
+     include(${rapids-cmake-dir}/cpm/rmm.cmake)
+     rapids_cpm_rmm(BUILD_EXPORT_SET implicit-exports INSTALL_EXPORT_SET implicit-exports)
 diff --git a/setup.py b/setup.py
 index c6c6de2..fef5769 100644
 --- a/setup.py
