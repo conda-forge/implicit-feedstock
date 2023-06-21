@@ -62,6 +62,8 @@ outputs:
         - cython >=0.24
         # implicit cimports BLAS from scipy
         - scipy >=0.16
+        - libcublas-dev      # [(cuda_compiler_version or "").startswith("12")]
+        - libcurand-dev      # [(cuda_compiler_version or "").startswith("12")]
       run:
         - python
         - {{ pin_compatible('numpy') }}
