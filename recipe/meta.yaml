@@ -18,7 +18,7 @@ source:
     - patches/0001-thrust.patch
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py2k]
   skip: true  # [win and cuda_compiler_version != "None"]
   skip: true  # [python_impl == "pypy"]
@@ -30,7 +30,7 @@ outputs:
   - name: implicit-proc
     version: {{ version }}
     build:
-      number: 0
+      number: 1
       string: {{ implicit_proc_type }}
     test:
       commands:
@@ -43,7 +43,7 @@ outputs:
 
   - name: implicit
     build:
-      number: 0
+      number: 1
       script: python -m pip install . --no-deps -vv
 
     requirements:
