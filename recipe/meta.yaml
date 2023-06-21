@@ -20,6 +20,7 @@ source:
 build:
   number: 2
   skip: true  # [py2k]
+  skip: true  # [ppc64le]
   skip: true  # [win and cuda_compiler_version != "None"]
   skip: true  # [python_impl == "pypy"]
   skip: true  # [cuda_compiler_version == "10.2"]
@@ -51,7 +52,7 @@ outputs:
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
         - {{ compiler('cuda') }}  # [linux64 and cuda_compiler_version != "None"]
-        - make  # [linux64]
+        - make  # [linux]
       host:
         - python
         - pip
