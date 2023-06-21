@@ -20,6 +20,7 @@ source:
 build:
   number: 1
   skip: true  # [py2k]
+  skip: true  # [ppc64le]
   skip: true  # [win and cuda_compiler_version != "None"]
   skip: true  # [python_impl == "pypy"]
   skip: true  # [cuda_compiler_version == "10.2"]
