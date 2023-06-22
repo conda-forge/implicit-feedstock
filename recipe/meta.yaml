@@ -2,6 +2,7 @@
 {% set name = "implicit" %}
 {% set version = "0.7.0" %}
 {% set sha256 = "e7bcf0c267404f0e579f268515174e981996bb268106c5be869d312bf48ab72e" %}
+{% set number = "3" %}
 
 {% set implicit_proc_type = "cpu" if cuda_compiler_version == "None" else "gpu" %}  # [linux64]
 {% set implicit_proc_type = "cpu" %}  # [not linux64]
@@ -18,7 +19,7 @@ source:
     - patches/0001-thrust.patch
 
 build:
-  number: 3
+  number: {{ number }}
   skip: true  # [py2k]
   skip: true  # [ppc64le]
   skip: true  # [win and cuda_compiler_version != "None"]
@@ -31,7 +32,7 @@ outputs:
   - name: implicit-proc
     version: {{ version }}
     build:
-      number: 3
+      number: {{ number }}
       string: {{ implicit_proc_type }}
     test:
       commands:
@@ -44,7 +45,7 @@ outputs:
 
   - name: implicit
     build:
-      number: 3
+      number: {{ number }}
       script: python -m pip install . --no-deps -vv
 
     requirements:
