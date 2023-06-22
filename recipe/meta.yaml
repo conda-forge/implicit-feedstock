@@ -4,8 +4,7 @@
 {% set sha256 = "e7bcf0c267404f0e579f268515174e981996bb268106c5be869d312bf48ab72e" %}
 {% set number = "4" %}
 
-{% set implicit_proc_type = "cpu" if cuda_compiler_version == "None" else "gpu" %}  # [linux64]
-{% set implicit_proc_type = "cpu" %}  # [not linux64]
+{% set implicit_proc_type = "cpu" if (cuda_compiler_version|default("None")) == "None" else "gpu" %}
 
 
 package:
@@ -52,7 +51,7 @@ outputs:
       build:
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
-        - {{ compiler('cuda') }}  # [linux64 and cuda_compiler_version != "None"]
+        - {{ compiler('cuda') }}  # [cuda_compiler_version not in (undefined, 'None')]
         - make  # [linux]
       host:
         - python
