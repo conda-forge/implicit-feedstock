@@ -2,9 +2,9 @@
 {% set name = "implicit" %}
 {% set version = "0.7.0" %}
 {% set sha256 = "e7bcf0c267404f0e579f268515174e981996bb268106c5be869d312bf48ab72e" %}
-{% set number = "4" %}
+{% set number = "5" %}
 
-{% set implicit_proc_type = "cpu" if (cuda_compiler_version|default("None")) == "None" else "gpu" %}
+{% set implicit_proc_type = "cpu" if (cuda_compiler|default("None")) == "None" else "gpu" %}
 
 
 package:
@@ -20,8 +20,7 @@ source:
 build:
   number: {{ number }}
   skip: true  # [py2k]
-  skip: true  # [ppc64le]
-  skip: true  # [win and cuda_compiler_version != "None"]
+  skip: true  # [win and cuda_compiler not in (undefined, "None")]
   skip: true  # [python_impl == "pypy"]
   skip: true  # [cuda_compiler_version == "10.2"]
   skip: true  # [cuda_compiler_version == "11.0"]
@@ -51,7 +50,7 @@ outputs:
       build:
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
-        - {{ compiler('cuda') }}  # [cuda_compiler_version not in (undefined, "None")]
+        - {{ compiler('cuda') }}  # [cuda_compiler not in (undefined, "None")]
         - make  # [linux]
       host:
         - python
