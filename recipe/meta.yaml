@@ -56,7 +56,7 @@ outputs:
         - python
         - pip
         - wheel
-        - setuptools
+        - setuptools >=42
         - cython >=0.24
         # implicit cimports BLAS from scipy
         - scipy >=0.16
