@@ -16,6 +16,7 @@ source:
   sha256: {{ sha256 }}
   patches:
     - patches/0001-thrust.patch
+    - patches/setup_requires.diff
 
 build:
   number: {{ number }}
