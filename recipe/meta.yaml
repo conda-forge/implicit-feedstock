@@ -2,7 +2,7 @@
 {% set name = "implicit" %}
 {% set version = "0.7.0" %}
 {% set sha256 = "e7bcf0c267404f0e579f268515174e981996bb268106c5be869d312bf48ab72e" %}
-{% set number = "5" %}
+{% set number = "6" %}
 
 {% set implicit_proc_type = "cpu" if (cuda_compiler|default("None")) == "None" else "gpu" %}
 
@@ -19,9 +19,7 @@ source:
 
 build:
   number: {{ number }}
-  skip: true  # [py2k]
   skip: true  # [win and cuda_compiler not in (undefined, "None")]
-  skip: true  # [python_impl == "pypy"]
   skip: true  # [cuda_compiler_version == "10.2"]
   skip: true  # [cuda_compiler_version == "11.0"]
   skip: true  # [cuda_compiler_version == "11.1"]
