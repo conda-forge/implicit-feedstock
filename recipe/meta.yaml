@@ -44,7 +44,7 @@ outputs:
   - name: implicit
     build:
       number: {{ number }}
-      script: python -m pip install . --no-deps -vv
+      script: {{ PYTHON }} -m pip install --no-index --no-deps --ignore-installed --cache-dir pip_cache . -vv
 
     requirements:
       build:
