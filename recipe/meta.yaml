@@ -44,7 +44,7 @@ outputs:
       number: {{ number }}
       script_env:
         - CMAKE_GENERATOR = "Ninja"
-      script: {{ PYTHON }} -m pip install --no-index --no-deps --ignore-installed --cache-dir pip_cache . -vv
+      script: python -m pip install --no-index --no-deps --ignore-installed --cache-dir pip_cache . -vv
 
     requirements:
       build:
