@@ -23,8 +23,6 @@ build:
   skip: true  # [cuda_compiler_version == "10.2"]
   skip: true  # [cuda_compiler_version == "11.0"]
   skip: true  # [cuda_compiler_version == "11.1"]
-  script_env:
-    - CMAKE_GENERATOR = "Ninja"
 
 outputs:
   - name: implicit-proc
@@ -44,6 +42,8 @@ outputs:
   - name: implicit
     build:
       number: {{ number }}
+      script_env:
+        - CMAKE_GENERATOR = "Ninja"
       script: {{ PYTHON }} -m pip install --no-index --no-deps --ignore-installed --cache-dir pip_cache . -vv
 
     requirements:
