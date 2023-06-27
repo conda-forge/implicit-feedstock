@@ -55,8 +55,8 @@ outputs:
       host:
         - python
         - pip
-        - wheel
         - setuptools >=42
+        - wheel
         - scikit-build >=0.13.1
         - cython >=0.24
         # implicit cimports BLAS from scipy
