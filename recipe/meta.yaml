@@ -49,14 +49,14 @@ outputs:
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
         - {{ compiler('cuda') }}  # [cuda_compiler not in (undefined, "None")]
+        - cmake
+        - ninja
         - make  # [linux]
       host:
         - python
         - pip
         - wheel
         - setuptools
-        - ninja
-        - cmake
         - cython >=0.24
         # implicit cimports BLAS from scipy
         - scipy >=0.16
