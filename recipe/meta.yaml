@@ -42,7 +42,7 @@ outputs:
   - name: implicit
     build:
       number: {{ number }}
-      script: python -m pip install . --no-deps -vv
+      script: python -m pip install . --no-deps -vv --no-build-isolation
 
     requirements:
       build:
@@ -52,6 +52,7 @@ outputs:
         - ninja                                  # [build_platform != target_platform]
         - cmake                                  # [build_platform != target_platform]
         - scipy >=0.16                           # [build_platform != target_platform]
+        - scikit-build>=0.13.1                   # [build_platform != target_platform]
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
         - {{ compiler('cuda') }}  # [cuda_compiler not in (undefined, "None")]
