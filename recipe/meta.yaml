@@ -56,7 +56,7 @@ outputs:
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
         - {{ compiler('cuda') }}  # [cuda_compiler not in (undefined, "None")]
-        - make # [linux]
+        - make  # [linux]
       host:
         - python
         - pip
