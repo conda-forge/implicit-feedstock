@@ -44,7 +44,7 @@ outputs:
       number: {{ number }}
       script:
         - export CMAKE_GENERATOR="Ninja"
-        - {{ PYTHON }} -m pip install . --no-deps -vv --no-build-isolation
+        - python -m pip install . --no-deps -vv --no-build-isolation
 
     requirements:
       build:
@@ -58,7 +58,6 @@ outputs:
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
         - {{ compiler('cuda') }}  # [cuda_compiler not in (undefined, "None")]
-        - make  # [linux]
       host:
         - python
         - pip
