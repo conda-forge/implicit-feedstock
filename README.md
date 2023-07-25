@@ -3,6 +3,7 @@ About implicit-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/implicit-feedstock/blob/main/LICENSE.txt)
 
+
 About implicit
 --------------
 
@@ -20,6 +21,7 @@ This project provides fast Python implementations of the algorithms
 described in the paper Collaborative Filtering for Implicit Feedback
 Datasets and in Applications of the Conjugate Gradient Method
 for Implicit Feedback Collaborative Filtering
+
 
 About implicit-proc
 -------------------
