@@ -66,7 +66,7 @@ outputs:
         - ninja
         - cmake
         - cython >=0.24
-        - scikit-build> =0.13.1
+        - scikit-build >=0.13.1
         # implicit cimports BLAS from scipy
         - scipy >=0.16
         - libcublas-dev      # [(cuda_compiler_version or "").startswith("12")]
