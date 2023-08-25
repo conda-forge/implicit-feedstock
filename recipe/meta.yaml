@@ -49,7 +49,7 @@ outputs:
         - ninja                                  # [build_platform != target_platform]
         - cmake                                  # [build_platform != target_platform]
         - scipy >=0.16                           # [build_platform != target_platform]
-        - scikit-build>=0.13.1                   # [build_platform != target_platform]
+        - scikit-build >=0.13.1                  # [build_platform != target_platform]
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
         - {{ compiler('cuda') }}  # [cuda_compiler not in (undefined, "None")]
@@ -61,7 +61,7 @@ outputs:
         - ninja
         - cmake
         - cython >=0.24
-        - scikit-build>=0.13.1
+        - scikit-build >=0.13.1
         # implicit cimports BLAS from scipy
         - scipy >=0.16
         - libcublas-dev      # [(cuda_compiler_version or "").startswith("12")]
