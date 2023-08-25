@@ -20,9 +20,6 @@ source:
 build:
   number: {{ number }}
   skip: true  # [win and cuda_compiler not in (undefined, "None")]
-  skip: true  # [cuda_compiler_version == "10.2"]
-  skip: true  # [cuda_compiler_version == "11.0"]
-  skip: true  # [cuda_compiler_version == "11.1"]
 
 outputs:
   - name: implicit-proc
