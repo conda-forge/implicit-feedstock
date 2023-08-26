@@ -43,16 +43,16 @@ outputs:
 
     requirements:
       build:
-        - python                                 # [build_platform != target_platform]
-        - cross-python_{{ target_platform }}     # [build_platform != target_platform]
-        - cython                                 # [build_platform != target_platform]
-        - scipy >=0.16                           # [build_platform != target_platform]
-        - scikit-build >=0.13.1                  # [build_platform != target_platform]
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
         - {{ compiler('cuda') }}  # [cuda_compiler not in (undefined, "None")]
         - cmake
         - ninja
+        - python                                 # [build_platform != target_platform]
+        - cross-python_{{ target_platform }}     # [build_platform != target_platform]
+        - cython                                 # [build_platform != target_platform]
+        - scipy >=0.16                           # [build_platform != target_platform]
+        - scikit-build >=0.13.1                  # [build_platform != target_platform]
       host:
         - python
         - pip
