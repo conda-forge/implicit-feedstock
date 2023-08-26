@@ -1,8 +1,8 @@
 {% set implicit_proc_type = "cpu" %}
 {% set name = "implicit" %}
-{% set version = "0.7.0" %}
-{% set sha256 = "e7bcf0c267404f0e579f268515174e981996bb268106c5be869d312bf48ab72e" %}
-{% set number = "7" %}
+{% set version = "0.7.1" %}
+{% set sha256 = "889c6a8f1e4c64eb5705890aa830625a7543d88757eb23ee5f6f4ba0caa8fcf3" %}
+{% set number = "1" %}
 
 {% set implicit_proc_type = "cpu" if (cuda_compiler|default("None")) == "None" else "gpu" %}
 
@@ -14,16 +14,10 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
-  patches:
-    - patches/0001-thrust.patch
-    - patches/setup_requires.diff
 
 build:
   number: {{ number }}
   skip: true  # [win and cuda_compiler not in (undefined, "None")]
-  skip: true  # [cuda_compiler_version == "10.2"]
-  skip: true  # [cuda_compiler_version == "11.0"]
-  skip: true  # [cuda_compiler_version == "11.1"]
 
 outputs:
   - name: implicit-proc
@@ -45,22 +39,27 @@ outputs:
       number: {{ number }}
       script_env:
         - CMAKE_GENERATOR = "Ninja"
-      script: python -m pip install --no-index --no-deps --ignore-installed --cache-dir pip_cache . -vv
+      script: python -m pip install . -vv --no-deps --no-index --no-build-isolation --ignore-installed --cache-dir pip_cache
 
     requirements:
       build:
+        - python                                 # [build_platform != target_platform]
+        - cross-python_{{ target_platform }}     # [build_platform != target_platform]
+        - cython                                 # [build_platform != target_platform]
+        - ninja                                  # [build_platform != target_platform]
+        - cmake                                  # [build_platform != target_platform]
+        - scipy >=0.16                           # [build_platform != target_platform]
+        - scikit-build >=0.13.1                  # [build_platform != target_platform]
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
         - {{ compiler('cuda') }}  # [cuda_compiler not in (undefined, "None")]
-        - cmake
-        - ninja
       host:
         - python
         - pip
-        - setuptools >=42
         - wheel
-        - scikit-build >=0.13.1
+        - setuptools >=42
         - cython >=0.24
+        - scikit-build >=0.13.1
         # implicit cimports BLAS from scipy
         - scipy >=0.16
         - libcublas-dev      # [(cuda_compiler_version or "").startswith("12")]

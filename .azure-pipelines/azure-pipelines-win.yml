@@ -14,8 +14,14 @@ jobs:
       win_64_cuda_compilerNonecuda_compiler_versionNonepython3.11.____cpython:
         CONFIG: win_64_cuda_compilerNonecuda_compiler_versionNonepython3.11.____cpython
         UPLOAD_PACKAGES: 'True'
+      win_64_cuda_compilerNonecuda_compiler_versionNonepython3.8.____73_pypy:
+        CONFIG: win_64_cuda_compilerNonecuda_compiler_versionNonepython3.8.____73_pypy
+        UPLOAD_PACKAGES: 'True'
       win_64_cuda_compilerNonecuda_compiler_versionNonepython3.8.____cpython:
         CONFIG: win_64_cuda_compilerNonecuda_compiler_versionNonepython3.8.____cpython
+        UPLOAD_PACKAGES: 'True'
+      win_64_cuda_compilerNonecuda_compiler_versionNonepython3.9.____73_pypy:
+        CONFIG: win_64_cuda_compilerNonecuda_compiler_versionNonepython3.9.____73_pypy
         UPLOAD_PACKAGES: 'True'
       win_64_cuda_compilerNonecuda_compiler_versionNonepython3.9.____cpython:
         CONFIG: win_64_cuda_compilerNonecuda_compiler_versionNonepython3.9.____cpython
@@ -68,6 +74,9 @@ jobs:
         call activate base
         if EXIST LICENSE.txt (
           copy LICENSE.txt "recipe\\recipe-scripts-license.txt"
+        )
+        if NOT [%HOST_PLATFORM%] == [%BUILD_PLATFORM%] (
+          set "EXTRA_CB_OPTIONS=%EXTRA_CB_OPTIONS% --no-test"
         )
         conda.exe mambabuild "recipe" -m .ci_support\%CONFIG%.yaml --suppress-variables %EXTRA_CB_OPTIONS%
       displayName: Build recipe
