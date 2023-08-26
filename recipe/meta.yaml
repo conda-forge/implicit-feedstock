@@ -38,7 +38,7 @@ outputs:
     build:
       number: {{ number }}
       script_env:
-        - CMAKE_GENERATOR = "Ninja"
+        - CMAKE_GENERATOR="Ninja"
       script: python -m pip install . -vv --no-deps --no-index --no-build-isolation --ignore-installed --cache-dir pip_cache
 
     requirements:
