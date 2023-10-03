@@ -1,7 +1,7 @@
 {% set implicit_proc_type = "cpu" %}
 {% set name = "implicit" %}
-{% set version = "0.7.1" %}
-{% set sha256 = "889c6a8f1e4c64eb5705890aa830625a7543d88757eb23ee5f6f4ba0caa8fcf3" %}
+{% set version = "0.7.2" %}
+{% set sha256 = "bacf79120c87ad0744a4365a089409fddd33231880aef4a495bab2d4f888291d" %}
 {% set number = 2 %}
 
 {% set implicit_proc_type = "cpu" if (cuda_compiler|default("None")) == "None" else "gpu" %}
@@ -66,9 +66,10 @@ outputs:
         - libcurand-dev      # [(cuda_compiler_version or "").startswith("12")]
       run:
         - python
-        - numpy
+        - numpy >=1.17.0
         - {{ pin_compatible('scipy') }}
         - tqdm >=4.27
+        - threadpoolctl
       run_constrained:
         - implicit-proc * {{ implicit_proc_type }}
 
