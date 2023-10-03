@@ -10,8 +10,6 @@ cuda_compiler_version:
 - None
 cxx_compiler:
 - vs2019
-numpy:
-- '1.23'
 pin_run_as_build:
   python:
     min_pin: x.x
@@ -23,5 +21,3 @@ target_platform:
 zip_keys:
 - - cuda_compiler
   - cuda_compiler_version
-- - python
-  - numpy
