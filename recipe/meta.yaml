@@ -66,9 +66,10 @@ outputs:
         - libcurand-dev      # [(cuda_compiler_version or "").startswith("12")]
       run:
         - python
-        - numpy
+        - numpy >=1.17.0
         - {{ pin_compatible('scipy') }}
         - tqdm >=4.27
+        - threadpoolctl
       run_constrained:
         - implicit-proc * {{ implicit_proc_type }}
 
