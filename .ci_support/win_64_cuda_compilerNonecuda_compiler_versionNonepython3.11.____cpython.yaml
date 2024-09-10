@@ -23,3 +23,5 @@ target_platform:
 zip_keys:
 - - cuda_compiler
   - cuda_compiler_version
+- - python
+  - channel_sources
