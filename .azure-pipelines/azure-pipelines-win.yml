@@ -17,11 +17,8 @@ jobs:
       win_64_cuda_compilerNonecuda_compiler_versionNonepython3.12.____cpython:
         CONFIG: win_64_cuda_compilerNonecuda_compiler_versionNonepython3.12.____cpython
         UPLOAD_PACKAGES: 'True'
-      win_64_cuda_compilerNonecuda_compiler_versionNonepython3.8.____cpython:
-        CONFIG: win_64_cuda_compilerNonecuda_compiler_versionNonepython3.8.____cpython
-        UPLOAD_PACKAGES: 'True'
-      win_64_cuda_compilerNonecuda_compiler_versionNonepython3.9.____73_pypy:
-        CONFIG: win_64_cuda_compilerNonecuda_compiler_versionNonepython3.9.____73_pypy
+      win_64_cuda_compilerNonecuda_compiler_versionNonepython3.13.____cp313:
+        CONFIG: win_64_cuda_compilerNonecuda_compiler_versionNonepython3.13.____cp313
         UPLOAD_PACKAGES: 'True'
       win_64_cuda_compilerNonecuda_compiler_versionNonepython3.9.____cpython:
         CONFIG: win_64_cuda_compilerNonecuda_compiler_versionNonepython3.9.____cpython
