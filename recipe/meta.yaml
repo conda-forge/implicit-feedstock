@@ -2,7 +2,7 @@
 {% set name = "implicit" %}
 {% set version = "0.7.2" %}
 {% set sha256 = "bacf79120c87ad0744a4365a089409fddd33231880aef4a495bab2d4f888291d" %}
-{% set number = 6 %}
+{% set number = 7 %}
 
 {% set implicit_proc_type = "cpu" if (cuda_compiler|default("None")) == "None" else "gpu" %}
 
@@ -12,7 +12,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
