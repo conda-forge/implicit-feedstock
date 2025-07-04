@@ -8,42 +8,30 @@ jobs:
     vmImage: ubuntu-latest
   strategy:
     matrix:
-      linux_64_cuda_compilerNone:
-        CONFIG: linux_64_cuda_compilerNone
+      linux_64_cuda_compiler_version12.6:
+        CONFIG: linux_64_cuda_compiler_version12.6
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_64_cuda_compilercuda-nvcc:
-        CONFIG: linux_64_cuda_compilercuda-nvcc
+      linux_64_cuda_compiler_versionNone:
+        CONFIG: linux_64_cuda_compiler_versionNone
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_64_cuda_compilernvcc:
-        CONFIG: linux_64_cuda_compilernvcc
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64-cuda11.8:ubi8
-      linux_aarch64_cuda_compilerNone:
-        CONFIG: linux_aarch64_cuda_compilerNone
+      linux_aarch64_cuda_compiler_version12.6:
+        CONFIG: linux_aarch64_cuda_compiler_version12.6
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_aarch64_cuda_compilercuda-nvcc:
-        CONFIG: linux_aarch64_cuda_compilercuda-nvcc
+      linux_aarch64_cuda_compiler_versionNone:
+        CONFIG: linux_aarch64_cuda_compiler_versionNone
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_aarch64_cuda_compilernvcc:
-        CONFIG: linux_aarch64_cuda_compilernvcc
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64-cuda11.8:ubi8
-      linux_ppc64le_cuda_compilerNone:
-        CONFIG: linux_ppc64le_cuda_compilerNone
+      linux_ppc64le_cuda_compiler_version12.4:
+        CONFIG: linux_ppc64le_cuda_compiler_version12.4
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_ppc64le_cuda_compilercuda-nvcc:
-        CONFIG: linux_ppc64le_cuda_compilercuda-nvcc
+      linux_ppc64le_cuda_compiler_versionNone:
+        CONFIG: linux_ppc64le_cuda_compiler_versionNone
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_ppc64le_cuda_compilernvcc:
-        CONFIG: linux_ppc64le_cuda_compilernvcc
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64-cuda11.8:ubi8
   timeoutInMinutes: 360
   variables: {}
 
