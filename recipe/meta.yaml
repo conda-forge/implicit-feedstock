@@ -65,8 +65,8 @@ outputs:
         - scipy >=0.16
         - libcublas-dev      # [(cuda_compiler_version or "").startswith("12")]
         - libcurand-dev      # [(cuda_compiler_version or "").startswith("12")]
-        - fmt <10.0.0        # [cuda_compiler_version != "None"]
-        - spdlog <1.12.0     # [cuda_compiler_version != "None"]
+        - fmt                # [cuda_compiler_version != "None"]
+        - spdlog             # [cuda_compiler_version != "None"]
       run:
         - python
         - numpy >=1.17.0
