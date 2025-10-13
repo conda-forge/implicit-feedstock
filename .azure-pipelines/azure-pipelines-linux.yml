@@ -24,12 +24,8 @@ jobs:
         CONFIG: linux_aarch64_cuda_compiler_versionNone
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_ppc64le_cuda_compiler_version12.4:
-        CONFIG: linux_ppc64le_cuda_compiler_version12.4
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_ppc64le_cuda_compiler_versionNone:
-        CONFIG: linux_ppc64le_cuda_compiler_versionNone
+      linux_ppc64le_:
+        CONFIG: linux_ppc64le_
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
   timeoutInMinutes: 360
