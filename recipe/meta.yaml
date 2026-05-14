@@ -57,6 +57,8 @@ outputs:
         - scipy >=0.16                           # [build_platform != target_platform]
         - scikit-build-core >=0.11               # [build_platform != target_platform]
       host:
+      host:
+        - cuda-version {{ cuda_compiler_version }} 
         - python
         - pip
         - wheel
@@ -66,8 +68,8 @@ outputs:
         - scikit-build-core >=0.11
         # implicit cimports BLAS from scipy
         - scipy >=0.16
-        - libcublas-dev      # [(cuda_compiler_version or "").startswith("12") or (cuda_compiler_version or "").startswith("13")]
-        - libcurand-dev      # [(cuda_compiler_version or "").startswith("12") or (cuda_compiler_version or "").startswith("13")]
+        - libcublas-dev      # [cuda_compiler_version != "None]
+        - libcurand-dev      # [cuda_compiler_version != "None]
         - fmt                # [cuda_compiler_version != "None"]
         - spdlog             # [cuda_compiler_version != "None"]
       run:
