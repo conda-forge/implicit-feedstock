@@ -1,7 +1,7 @@
 {% set implicit_proc_type = "cpu" %}
 {% set name = "implicit" %}
-{% set version = "0.7.2" %}
-{% set sha256 = "bacf79120c87ad0744a4365a089409fddd33231880aef4a495bab2d4f888291d" %}
+{% set version = "0.7.3" %}
+{% set sha256 = "9571a52d70b3667e99a6e6aae6681526dd3286c765cf0ea10e1073d068a98057" %}
 {% set number = 7 %}
 
 {% set implicit_proc_type = "cpu" if (cuda_compiler|default("None")) == "None" else "gpu" %}
@@ -39,6 +39,7 @@ outputs:
       number: {{ number }}
       script_env:
         - CMAKE_GENERATOR=Ninja
+        - SKBUILD_CMAKE_ARGS=-G Ninja
       script: python -m pip install . -vv --no-deps --no-index --no-build-isolation --ignore-installed --cache-dir pip_cache
 
     requirements:
@@ -52,15 +53,17 @@ outputs:
         - python                                 # [build_platform != target_platform]
         - cross-python_{{ target_platform }}     # [build_platform != target_platform]
         - cython                                 # [build_platform != target_platform]
+        - cython-cmake                           # [build_platform != target_platform]
         - scipy >=0.16                           # [build_platform != target_platform]
-        - scikit-build >=0.13.1                  # [build_platform != target_platform]
+        - scikit-build-core >=0.11               # [build_platform != target_platform]
       host:
         - python
         - pip
         - wheel
         - setuptools >=42
         - cython >=0.24
-        - scikit-build >=0.13.1
+        - cython-cmake
+        - scikit-build-core >=0.11
         # implicit cimports BLAS from scipy
         - scipy >=0.16
         - libcublas-dev      # [(cuda_compiler_version or "").startswith("12")]
