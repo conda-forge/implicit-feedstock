@@ -57,7 +57,7 @@ outputs:
         - scipy >=0.16                           # [build_platform != target_platform]
         - scikit-build-core >=0.11               # [build_platform != target_platform]
       host:
-        - cuda-version {{ cuda_compiler_version }} # [cuda_compiler_version != "None"]
+        - cuda-version {{ cuda_compiler_version }}  # [cuda_compiler_version != "None"]
         - python
         - pip
         - wheel
